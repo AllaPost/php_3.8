@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отмена заказа</title>
+</head>
+<body>
+    <h1>Отмена заказа</h1>
+    <form action="cancel_order.php" method="POST">
+        <label for="order_id">Номер заказа:</label>
+        <input type="text" id="order_id" name="order_id" required>
+        <br>
+        <label for="reason">Причина отмены:</label>
+        <textarea id="reason" name="reason" required></textarea>
+        <br>
+        <button type="submit">Отменить заказ</button>
+    </form>
+</body>
+</html>
